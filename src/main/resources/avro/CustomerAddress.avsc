@@ -1,0 +1,28 @@
+[
+ {
+     "namespace": "com.rccl.middleware.datastreaming.avro",
+     "type": "record",
+     "name": "CustomerAddressKey",
+     "fields": [
+       {
+                           "name": "addressid",
+                           "type": "long"
+                         }
+     ]
+   },
+ {
+        "type": "record",
+        "name": "CustomerAddressValue",
+        "namespace": "com.rccl.middleware.datastreaming.avro",
+        "fields": [
+                          {"name": "addressid", "type": "long"},
+                          {"name": "address1",  "type": ["null","string"]},
+                          {"name": "city",  "type": ["null","string"]},
+                          {"name": "latest_updated_date_address",  "type": "long"},
+                          {"name": "zip",  "type": ["null","string"]},
+                          {"name": "customerid", "type": "long"},
+                          {"name": "latest_updated_date_customer",  "type": "long"},
+                          {"name": "name",  "type": ["null","string"]}
+                  ]
+    }
+]

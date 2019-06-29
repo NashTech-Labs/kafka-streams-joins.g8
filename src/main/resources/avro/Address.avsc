@@ -1,0 +1,25 @@
+[
+ {
+     "namespace": "com.rccl.middleware.datastreaming.avro",
+     "type": "record",
+     "name": "AddressKey",
+     "fields": [
+       {
+                           "name": "addressid",
+                           "type": "long"
+                         }
+     ]
+   },
+ {
+        "type": "record",
+        "name": "AddressValue",
+        "namespace": "com.rccl.middleware.datastreaming.avro",
+        "fields": [
+                 {"name": "addressid", "type": "long"},
+                 {"name": "address1",  "type": ["null","string"]},
+                  {"name": "city",  "type": ["null","string"]},
+                  {"name": "latest_updated_date",  "type": "long"},
+                 {"name": "zip",  "type": ["null","string"]}
+                  ]
+    }
+]
